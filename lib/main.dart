@@ -150,7 +150,7 @@ class AppsFlyerService {
     );
     appsFlyerSdk?.onInstallConversionData((res) {
       conversionData = res.toString();
-      appsFlyerId = res['payload']['af_status'].toString();
+    //  appsFlyerId = res['payload']['af_status'].toString();
       onUpdate();
     });
     appsFlyerSdk?.getAppsFlyerUID().then((value) {
